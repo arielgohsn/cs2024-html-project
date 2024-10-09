@@ -24,3 +24,24 @@ h2 {
 .carousel {
     width:100%;
 }
+
+.services-icon {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.8rem;
+    align-self: center;
+    color: rgb(0, 28, 67);
+}
+
+.services-card {
+    border: 0;
+}
+
+.testimonial-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 612/350; 
+    /* Aspect ratio to be changed once we find better pictures */
+}
