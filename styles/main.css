@@ -9,9 +9,11 @@ h2 {
     margin: 0 0 1em 0;
     text-transform: uppercase;
 }
+
 .major {
     margin: 3em 0;
 }
+
 .nav-link {
     text-decoration: underline .12em rgba(0, 28, 67, 0);
     transition: text-decoration-color 300ms;
@@ -19,13 +21,20 @@ h2 {
     font-weight: 500;
     margin: 0 0.5em;
 }
+
 .nav-link:hover {
     text-decoration-color: rgba(0, 28, 67, 0.8);
-    color: rgba(0, 28, 67, 1);
+    color: rgb(0, 28, 67);
 }
+
 .carousel {
     width:100%;
 }
+
+.carousel-caption {
+    height:25%;
+}
+
 
 .services-icon {
     width: 5rem;
@@ -46,4 +55,75 @@ h2 {
     width: 100%;
     aspect-ratio: 612/350; 
     /* Aspect ratio to be changed once we find better pictures */
+}
+
+/* Buttons */
+
+.caroubtn {
+    display: inline-block;
+    width: 15%;
+    height: 50%;
+    padding: 0.35em 1.2em;
+    border: 0.2em solid #001c43;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    transform: skew(20deg);
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 750;
+    font-size: 100%;
+    color: #001c43;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.caroubtn-skew-fix{
+    display:inline-block;
+    transform: skew(-20deg);
+  }
+
+.caroubtn:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    transform: scale(1.1) perspective(1px) skew(20deg);
+}
+
+@media all and (max-width:30em) {
+    .caroubtn {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+/* Very Cool Animation Section */
+
+.bouncy {
+    animation: bouncy 5s infinite linear;
+    position: relative
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0em
+    }
+    40% {
+        top: 0em
+    }
+    43% {
+        top: -0.5em
+    }
+    46% {
+        top: 0em
+    }
+    48% {
+        top: -0.5em
+    }
+    50% {
+        top: 0em
+    }
+    100% {
+        top: 0em;
+    }
 }
