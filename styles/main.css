@@ -8,6 +8,10 @@ h2 {
     line-height: 1;
     margin: 0 0 1em 0;
     text-transform: uppercase;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-decoration: underline #ccc;
+    text-underline-offset: .4em;
 }
 
 .major {
@@ -24,7 +28,7 @@ h2 {
 
 .nav-link:hover {
     text-decoration-color: rgba(0, 28, 67, 0.8);
-    color: rgb(0, 28, 67);
+    color: #001c43;
 }
 
 .carousel {
@@ -34,11 +38,9 @@ h2 {
 .carousel-caption {
     height:25%;
 }
-h2 {
-    padding-left: 30%;
-    padding-right: 30%;
-    text-decoration: underline #ccc;
-    text-underline-offset: .4em;
+
+.card h2 {
+    text-decoration: none;
 }
 
 .services-icon {
@@ -81,6 +83,22 @@ h2 {
     color: #333;
 }
 
+.expertise-card {
+    background-color: #f5f5f5;
+    border-radius: 0;
+    height: 100%;
+    vertical-align: auto;
+}
+.expertise-card h2{
+    font-size: 600%;
+}
+.expertise-card .card-title {
+    color: #333;
+}
+.expertise-card .card-text {
+    color: #555;
+}
+
 .testimonial-cover {
     background-repeat: no-repeat;
     background-position: center center;
@@ -88,6 +106,17 @@ h2 {
     width: 100%;
     aspect-ratio: 612/350; 
     /* Aspect ratio to be changed once we find better pictures */
+}
+
+#expertise{
+    background-color: #001c43;
+    background-image: url(../assets/top-shadow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#expertise h2 {
+    color: #ddd;
 }
 
 /* Buttons */
