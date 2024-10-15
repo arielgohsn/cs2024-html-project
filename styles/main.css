@@ -400,7 +400,7 @@ h2 {
     --primaryLight: #e08700;
     --secondary: #930000;
     --secondaryLight: #e08700;
-    --headerColor: #1a1a1a;
+    --headerColor: #001c43;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -444,6 +444,254 @@ h2 {
     max-width: 40.625rem;
     margin: 0;
     color: var(--bodyTextColor);
+}
+
+/* Our Team Section */
+
+#team {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#team .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+}
+
+#team .cs-content {
+    text-align: center;
+    width: 100%;
+    max-width: 40.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+#team .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+#team .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+
+#team .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#team .cs-item {
+    list-style: none;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+#team .cs-item:hover {
+    cursor: pointer;
+}
+
+#team .cs-item:hover .cs-picture:before,
+#team .cs-item:hover .cs-picture:after {
+    opacity: 1;
+}
+
+#team .cs-item:hover .cs-picture img {
+    transform: scale(1.1);
+}
+
+#team .cs-item:hover .cs-info:before {
+    background-color: var(--primary);
+    opacity: 1;
+}
+
+#team .cs-item:hover .cs-social-group {
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+
+#team .cs-item:hover .cs-link {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#team .cs-picture {
+    width: 100%;
+    height: 25rem;
+    aspect-ratio: 0.82;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+#team .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.7s;
+}
+
+#team .cs-info {
+    width: 90%;
+    max-width: 15rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#team .cs-info:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #001c43;
+    opacity: 0.8;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition:
+        background-color 0.3s,
+        opacity 0.3s;
+}
+
+#team .cs-name {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+    display: block;
+}
+
+#team .cs-job {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0;
+    color: #fff;
+    display: block;
+}
+
+#team .cs-social-group {
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 0;
+    margin-top: 0;
+    transition:
+        height 0.3s,
+        marign-top 0.3s;
+}
+
+#team .cs-link {
+    width: 2rem;
+    height: 2rem;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-0.5rem);
+    transition:
+        opacity 0.6s,
+        transform 0.4s;
+}
+
+#team .cs-link:hover .cs-icon {
+    filter: grayscale(0);
+    transform: translateY(-0.25rem);
+}
+
+#team .cs-link:nth-of-type(2) {
+    transition-delay: 0.1s;
+}
+
+#team .cs-link:nth-of-type(3) {
+    transition-delay: 0.2s;
+}
+
+#team .cs-link:nth-of-type(4) {
+    transition-delay: 0.3s;
+}
+
+#team .cs-icon {
+    width: 0.75rem;
+    height: auto;
+    filter: grayscale(1);
+    transition:
+        filter 0.3s,
+        transform 0.3s;
+    z-index: 10;
+}
+
+#team {
+    --primary: #930000;
+    --primaryLight: #e08700;
+    --secondary: #001c43;
+    --secondaryLight: #e08700;
+    --headerColor: #001c43;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
 
 /* Very Cool Animation Section */
