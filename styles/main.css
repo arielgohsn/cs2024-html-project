@@ -162,6 +162,42 @@ h2 {
 
 /* Blog Section */
 
+a.card-title{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 120%;
+    color: rgba(0, 28, 67, 0.9);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    max-lines: 2;
+    max-width: 80%;
+}
+a.card-title:hover{
+    color: #930000;
+}
+
+a.card-title:hover ~ img.card-img-top{
+    transform: scale(1.2);
+}
+
+#blog img.card-img-top{
+    max-height: 200px;
+    object-fit: cover;
+}
+
+#blog .card-text{
+    max-lines: 2;
+    text-overflow: ellipsis;
+    color: #444;
+    text-align: justify;
+}
+
+.blogpost-date{
+    background-color: #e59214;
+    font-size: larger;
+}
+
 /* Contact Us Page */
 
 #contact-cover{
