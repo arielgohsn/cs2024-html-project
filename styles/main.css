@@ -85,8 +85,14 @@ h2 {
     overflow: hidden;
     transition: transform 100ms;
 }
+.services-card svg{
+    transition: fill 200ms ease-in;
+}
 .services-card:hover{
     transform: scale(1.05);
+}
+.services-card:hover svg{
+    fill: #e59214;
 }
 
 /* .services-card::before{
