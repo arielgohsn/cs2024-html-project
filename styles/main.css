@@ -83,6 +83,7 @@ h2 {
 .services-card {
     border: 1px solid transparent;
     overflow: hidden;
+    transition: transform 100ms;
 }
 .services-card:hover{
     transform: scale(1.05);
