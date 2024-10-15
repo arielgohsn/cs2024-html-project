@@ -15,9 +15,22 @@ h2 {
     margin: 3em 0;
 }
 
-.text-white {
+.text-footer {
     text-decoration: none;
- }
+    transition: transform 100ms;
+    text-underline-offset: 0.2em;
+    color: #e59214;
+}
+
+.text-footer:hover {
+    color: #acacaccc;
+    transform: scale(1.2) perspective(1px);
+}
+
+.icon-footer {
+    color: #e59214;
+    text-decoration: none;
+}
 
 /* Navigation Stuff */
 
