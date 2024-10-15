@@ -162,6 +162,10 @@ form{
     padding: 3% 3%;
 }
 
+#contactDetails .fa-solid{
+    color: #930000;
+}
+
 /* Buttons */
 
 .caroubtn {
@@ -224,13 +228,12 @@ form{
     font-weight: 600;
     font-size: 100%;
     color: #f5f5f5;
-    background-color: rgba(0, 28, 67, 0.9);
+    background-color: rgba(147, 0, 0, 0.9);
     text-align: center;
 }
 .form-btn:hover{
-    color: #001c43;
-    background-color: #f5f5f5;
-    border: 0.2em solid rgba(0, 28, 67, 0.9);
+    color: #f5f5f5;
+    background-color: rgba(0, 28, 67, 0.9);
 }
 
 @media all and (max-width:30em) {
