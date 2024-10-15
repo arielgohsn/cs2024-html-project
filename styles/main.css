@@ -38,6 +38,12 @@ h2 {
 
 /* Navigation Stuff */
 
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #00000080;
+    -moz-box-shadow: 0 8px 6px -6px #00000080;
+    box-shadow: 0 8px 6px -6px #00000080;
+}
+
 .nav-link {
     text-decoration: underline .12em rgba(0, 28, 67, 0);
     transition: text-decoration-color 300ms;
@@ -60,6 +66,9 @@ h2 {
 
 .carousel {
     width:100%;
+    -webkit-box-shadow: 0 8px 6px -6px #00000080;
+    -moz-box-shadow: 0 8px 6px -6px #00000080;
+    box-shadow: 0 8px 6px -6px #00000080;
 }
 
 .carousel-caption {
