@@ -157,6 +157,7 @@ h2 {
 
 form{
     width: 80%;
+    box-shadow: 2px 2px 8px #ccc;
 }
 .form-control{
     padding: 5% 5%;
