@@ -113,15 +113,26 @@ h2 {
     /* Aspect ratio to be changed once we find better pictures */
 }
 
-#expertise{
+#expertise,#contact-cover{
     background-color: #001c43;
     background-image: url(../assets/top-shadow.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#expertise h2 {
+#expertise h2,#contact-cover h2 {
     color: #ddd;
+}
+
+form{
+    width: 80%;
+}
+.form-control{
+    padding: 5% 5%;
+    font-weight: 500;
+}
+.form-control#enquiryBody{
+    padding: 3% 3%;
 }
 
 /* Buttons */
@@ -173,6 +184,26 @@ h2 {
     color: #000000;
     background-color: #FFFFFF;
     transform: scale(1.1) perspective(1px) skew(20deg);
+}
+
+.form-btn{
+    width: 55%;
+    aspect-ratio: 6;
+    padding: 0.35em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.25em;
+    text-transform: uppercase;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+    color: #f5f5f5;
+    background-color: rgba(0, 28, 67, 0.9);
+    text-align: center;
+}
+.form-btn:hover{
+    color: #001c43;
+    background-color: #f5f5f5;
+    border: 0.2em solid rgba(0, 28, 67, 0.9);
 }
 
 @media all and (max-width:30em) {
