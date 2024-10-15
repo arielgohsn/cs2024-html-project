@@ -85,8 +85,14 @@ h2 {
     overflow: hidden;
     transition: transform 100ms;
 }
+.services-card svg{
+    transition: fill 200ms ease-in;
+}
 .services-card:hover{
     transform: scale(1.05);
+}
+.services-card:hover svg{
+    fill: #e59214;
 }
 
 /* .services-card::before{
@@ -113,6 +119,8 @@ h2 {
     color: #333;
 }
 
+/* Expertise Section */
+
 .expertise-card {
     background-color: #f5f5f5;
     border-radius: 0;
@@ -129,6 +137,18 @@ h2 {
     color: #555;
 }
 
+#expertise{
+    background-color: #001c43;
+    background-image: url(../assets/top-shadow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 5px 8px #555, 0px -5px 8px #555;
+}
+
+#expertise h2,#contact-cover h2 {
+    color: #ddd;
+}
+
 /* Testimonial Section */
 
 .testimonial-cover {
@@ -140,15 +160,30 @@ h2 {
     /* Aspect ratio to be changed once we find better pictures */
 }
 
-#expertise{
+/* Contact Us Page */
+
+#contact-cover{
     background-color: #001c43;
-    background-image: url(../assets/top-shadow.png);
+    background-image: url(../assets/background.jpg);
+    background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#expertise h2 {
-    color: #ddd;
+form{
+    width: 80%;
+    box-shadow: 2px 2px 8px #ccc;
+}
+.form-control{
+    padding: 5% 5%;
+    font-weight: 500;
+}
+.form-control#enquiryBody{
+    padding: 3% 3%;
+}
+
+#contactDetails .fa-solid{
+    color: #930000;
 }
 
 /* Buttons */
@@ -200,6 +235,25 @@ h2 {
     color: #000000;
     background-color: #FFFFFF;
     transform: scale(1.1) perspective(1px) skew(20deg);
+}
+
+.form-btn{
+    width: 55%;
+    aspect-ratio: 6;
+    padding: 0.35em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.25em;
+    text-transform: uppercase;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+    color: #f5f5f5;
+    background-color: rgba(147, 0, 0, 0.9);
+    text-align: center;
+}
+.form-btn:hover{
+    color: #f5f5f5;
+    background-color: rgba(0, 28, 67, 0.9);
 }
 
 @media all and (max-width:30em) {
