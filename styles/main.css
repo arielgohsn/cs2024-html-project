@@ -24,11 +24,16 @@ h2 {
     text-underline-offset: 0.2em;
     font-weight: 500;
     margin: 0 0.5em;
+    color: #001c43;
+}
+
+.navbar-nav .nav-link.active{
+    color: rgb(147, 0, 0);
 }
 
 .nav-link:hover {
-    text-decoration-color: rgba(0, 28, 67, 0.8);
-    color: #001c43;
+    text-decoration-color: inherit;
+    color: rgb(229, 146, 20);
 }
 
 .carousel {
