@@ -128,13 +128,19 @@ h2 {
     vertical-align: auto;
 }
 .expertise-card h2{
-    font-size: 600%;
+    font-size: 620%;
 }
 .expertise-card .card-title {
     color: #333;
 }
 .expertise-card .card-text {
     color: #555;
+}
+
+.expertise-card .card-img-top{
+    object-fit: contain;
+    max-height: 125px;
+    vertical-align: middle;
 }
 
 #expertise,#promotion{
