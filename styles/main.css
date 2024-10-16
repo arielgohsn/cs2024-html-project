@@ -134,13 +134,19 @@ h2 {
     vertical-align: auto;
 }
 .expertise-card h2{
-    font-size: 600%;
+    font-size: 620%;
 }
 .expertise-card .card-title {
     color: #333;
 }
 .expertise-card .card-text {
     color: #555;
+}
+
+.expertise-card .card-img-top{
+    object-fit: contain;
+    max-height: 125px;
+    vertical-align: middle;
 }
 
 #expertise,#promotion{
@@ -151,7 +157,7 @@ h2 {
     box-shadow: 0px 5px 8px #555, 0px -5px 8px #555;
 }
 
-#expertise h2,#contact-cover h2,#promotion h2,#promotion h3 {
+#expertise h2,#promotion h2,#promotion h3 {
     color: #ddd;
 }
 
@@ -162,9 +168,51 @@ h2 {
     background-position: center center;
     background-size: cover;
     width: 100%;
-    aspect-ratio: 612/350; 
-    /* Aspect ratio to be changed once we find better pictures */
+    height: 100%;
+    background-color: #fff;
+    color: #001c43; 
+    font-family: "Raleway", Helvetica, sans-serif;
 }
+
+.testimonial-card {
+    background-color: transparent;
+    aspect-ratio: 2;
+    perspective: 1000px;
+  }
+  
+  .testimonial-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    box-shadow: 2px 2px 8px #ccc
+  }
+  
+  .testimonial-card:hover .testimonial-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .testimonial-cover, .testimonial-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 0.75rem;
+  }
+  
+  .testimonial-back {
+    background-color: rgba(0, 28, 67, 0.9);
+    color: #f5f5f5;
+    transform: rotateY(180deg);
+    font-family: "Raleway", Helvetica, sans-serif;
+  }
+  .testimonial-back .card-text{
+    text-align: justify;
+    color: #fafbfc;
+  }
 
 /* Blog Section */
 
@@ -176,7 +224,7 @@ a.card-title{
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: justify;
-    max-lines: 2;
+    max-lines: 1;
     max-width: 80%;
 }
 a.card-title:hover{
@@ -299,7 +347,7 @@ form{
     transition: color 0.3s;
 }
 
-.cs-button-solid:before {
+.cs-button-solid:before,.contact-btn::before,.form-btn::before,.link-btn::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -312,11 +360,11 @@ form{
     transition: width 0.3s;
 }
 
-.cs-button-solid:hover {
+.cs-button-solid:hover,.form-btn:hover,.contact-btn:hover,.link-btn:hover {
     color: #e59214;
 }
 
-.cs-button-solid:hover:before {
+.cs-button-solid:hover:before,.form-btn:hover::before,.contact-btn:hover::before,.link-btn:hover::before {
     width: 100%;
 }
 
@@ -325,7 +373,6 @@ form{
     aspect-ratio: 6;
     padding: 0.35em 1.2em;
     margin: 0 0.3em 0.3em 0;
-    border-radius: 0.25em;
     text-transform: uppercase;
     font-family: "Raleway", Helvetica, sans-serif;
     font-weight: 600;
@@ -333,10 +380,12 @@ form{
     color: #f5f5f5;
     background-color: rgba(147, 0, 0, 0.9);
     text-align: center;
-}
-.form-btn:hover,.link-btn:hover{
-    color: #f5f5f5;
-    background-color: rgba(0, 28, 67, 0.9);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    transition: color 0.3s;
+    border: 0;
 }
 
 .contact-btn{
@@ -346,18 +395,22 @@ form{
     aspect-ratio: 8;
     padding: 0.35em 1.2em;
     margin: 0 0.3em 0.3em 0;
-    border-radius: 0.4em;
     text-transform: uppercase;
     font-family: "Raleway", Helvetica, sans-serif;
     font-weight: 600;
     font-size: 180%;
     color: #f5f5f5;
     background-color: rgba(147, 0, 0, 0.9);
-    text-align: center; 
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    text-decoration: none;
 }
+
 .contact-btn:hover{
-    border: .15em solid #e59214;
-    color: #e59214;
+    border: 0.15em solid #e59214;
 }
 
 .link-btn{
@@ -365,73 +418,18 @@ form{
     min-width: 200px;
     min-height: 40px;
     aspect-ratio: 8;
-    padding: 0.35em 1.2em;
     margin: 0 0.3em 0.3em 0;
-    border-radius: 0.4em;
     text-transform: uppercase;
     font-family: "Raleway", Helvetica, sans-serif;
     font-weight: 600;
     font-size: 100%;
     color: #f5f5f5;
     background-color: rgba(147, 0, 0, 0.9);
-    text-align: center;
-}
-
-.form-btn{
-    width: 55%;
-    aspect-ratio: 6;
-    padding: 0.35em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.25em;
-    text-transform: uppercase;
-    font-family: "Raleway", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 100%;
-    color: #f5f5f5;
-    background-color: rgba(147, 0, 0, 0.9);
-    text-align: center;
-}
-.form-btn:hover,.link-btn:hover{
-    color: #f5f5f5;
-    background-color: rgba(0, 28, 67, 0.9);
-}
-
-.contact-btn{
-    width: 75%;
-    min-width: 200px;
-    min-height: 70px;
-    aspect-ratio: 8;
-    padding: 0.35em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.4em;
-    text-transform: uppercase;
-    font-family: "Raleway", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 180%;
-    color: #f5f5f5;
-    background-color: rgba(147, 0, 0, 0.9);
-    text-align: center; 
-}
-.contact-btn:hover{
-    border: .15em solid #e59214;
-    color: #e59214;
-}
-
-.link-btn{
-    width: 20%;
-    min-width: 200px;
-    min-height: 40px;
-    aspect-ratio: 8;
-    padding: 0.35em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.4em;
-    text-transform: uppercase;
-    font-family: "Raleway", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 100%;
-    color: #f5f5f5;
-    background-color: rgba(147, 0, 0, 0.9);
-    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 @media all and (max-width:30em) {
@@ -587,7 +585,7 @@ form{
     color: var(--bodyTextColor);
 }
 
-#about-us {
+#about-us,#blog,#testimonial,#services {
     --primary: #930000;
     --primaryLight: #e08700;
     --secondary: #930000;

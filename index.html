@@ -52,12 +52,12 @@
         <div class="carousel-item active">
           <img src="assets/carou1.png" class="d-block w-100" alt="Slide 1">
           <div class="carousel-caption d-none d-md-block">
-            <button type="button" class="btn caroubtn bouncy" style="animation-delay:0.07s">
+            <a class="btn caroubtn bouncy d-inline-flex align-items-center justify-content-center" href="index.html#services" style="animation-delay:0.07s">
               <span class="caroubtn-skew-fix text-center">Read More</span>
-            </button>
-            <button type="button" class="btn caroubtn bouncy" style="animation-delay:0.14s; background-color: #001c43; color: #E59214;">
+            </a>
+            <a class="btn caroubtn bouncy d-inline-flex align-items-center justify-content-center" href="contact-us.html" style="animation-delay:0.14s; background-color: #001c43; color: #E59214;">
               <span class="caroubtn-skew-fix text-center">Book Us</span>
-            </button>
+            </a>
           </div>
         </div>
         <div class="carousel-item">
@@ -66,9 +66,9 @@
         <div class="carousel-item">
           <img src="assets/carou3.png" class="d-block w-100" alt="Slide 3">
           <div class="carousel-caption d-none d-md-block position-absolute end-0 top-50" style="padding-right: 10%;">
-            <button type="button" class="btn enquirybtn position-absolute end-0 bottom-50 bouncy" style="animation-delay:0.14s; background-color: #001c43; color: #E59214;">
+            <a class="btn enquirybtn position-absolute end-0 bottom-50 bouncy align-items-center d-flex" href="contact-us.html" style="animation-delay:0.14s; background-color: #001c43; color: #E59214;">
               <span class="caroubtn-skew-fix text-center">Submit an Enquiry</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -84,8 +84,9 @@
   </div>
   <div class="container-fluid overflow-hidden text-center py-5" id="services">
     <div class="row">
-      <div class="col pt-5 pb-3">
+      <div class="col pt-5 pb-5">
         <h2><span style="color: #930000;">Services</span> We Provide</h2>
+        <span class="cs-topper" style="color: #555;">Here's what we can do for you</span>
       </div>
     </div>
     <div class="row g-4 mx-1">
@@ -138,14 +139,15 @@
   </div>
   <div class="container-fluid overflow-hidden text-center my-2 py-5" id="expertise">
     <div class="row">
-      <div class="col pt-4 pb-3">
+      <div class="col pt-4 pb-2">
         <h2>Why <span style="color: #E59214;">Pinnacle Accountants?</span></h2>
+        <span class="cs-topper" style="color: #f5f5f5;">Find out why we're built different</span>
       </div>
     </div>
     <div class="row g-4 mx-3 py-3 px-4">
       <div class="col">
-        <div class="card rounded-4 py-2 expertise-card">
-          <h2 class="display-1 fw-semibold m-0 pt-2" style="color: #001c43;">20<small class="fw-light" style="color: #E59214;">+</small></h2>
+        <div class="card rounded-2 py-2 expertise-card">
+          <h2 class="fw-semibold m-0 pt-4" style="color: #001c43;">20<small class="fw-light" style="color: #E59214;">+</small></h2>
           <div class="card-body">
             <h4 class="card-title">Years of Experience</h4>
             <p class="card-text">Serving the Singapore business community, with our extensive knowledge of Singapore's <i>compliance landscape</i> and <i>unique business environment</i>.</p>
@@ -153,8 +155,8 @@
         </div>
       </div>
       <div class="col">
-        <div class="card rounded-4 py-2 expertise-card">
-          <img src="assets/bottom-shadow.png" class="card-img-top" alt="...">
+        <div class="card rounded-2 py-2 expertise-card">
+          <img src="assets/expertise-2.png" class="card-img-top pt-2" alt="...">
           <div class="card-body">
             <h4 class="card-title">Bespoke, Value-Added Solutions</h4>
             <p class="card-text"><i>Strategic tax planning</i>, <i>risk management</i> and <i>financial advisory</i>. Tailored solutions to maximise your business success while staying compliant.</p>
@@ -162,14 +164,11 @@
         </div>
       </div>
       <div class="col">
-        <div class="card rounded-4 py-2 expertise-card">
-          <img src="assets/top-shadow.png" class="card-img-top" alt="...">
+        <div class="card rounded-2 py-2 expertise-card">
+          <img src="assets/expertise-3.png" class="card-img-top pt-2" alt="...">
           <div class="card-body">
             <h4 class="card-title">Cloud-Based, Real-Time Insights</h4>
             <p class="card-text">The apex of innovation. With our integrated <i>cloud-based software</i>, access financial data and reports at your fingertips in <i>real-time</i>.</p>
-            <!-- <div class="text-end">
-              <a href="#" class="btn btn-outline-primary"> Learn More </a>
-            </div> -->
           </div>
         </div>
       </div>
@@ -178,31 +177,64 @@
   <div class="container-fluid overflow-hidden text-center my-2 py-5" id="testimonials">
     <div class="row">
       <div class="col py-3">
-        <h2>Our Testimonials</h2>
+        <h2>Our <span style="color: #930000;">Testimonials</span></h2>
+        <span class="cs-topper" style="color: #555;">See what our clients say</span>
       </div>
     </div>
     <div class="row g-4 mx-1">
       <div class="col">
-        <div class="card testimonial-cover h-100 overflow-hidden text-bg-dark rounded-4"
-          style="background-image: url('assets/612x350.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 fw-bold">Company Name 1</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-card-inner rounded-2">
+            <div class="testimonial-cover" style="background-image: url(assets/testimonial-1.png)">
+            </div>
+            <div class="testimonial-back px-4 py-2">
+              <div class="col py-3">
+                <img src="assets/reviewstars.png" style="object-fit: contain;" class="card-img-top px-5 py-2">
+                <h4 class="fw-bold">Liho Tea Pte. Ltd.</h4>
+                <h6 class="card-text">
+                  "Pinnacle Accountants LLP has been an invaluable partner for our business. Their expertise in Singapore's regulatory landscape 
+                  made tax season a breeze for us. With their strategic tax planning and personalized advice, we not only stayed compliant but also maximized our profits."
+                </h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card testimonial-cover h-100 overflow-hidden text-bg-dark rounded-4"
-          style="background-image: url('assets/612x350.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 fw-bold">Company Name 2</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-card-inner rounded-2">
+            <div class="testimonial-cover" style="background-image: url(assets/testimonial-2.png);">
+            </div>
+            <div class="testimonial-back px-4 py-2">
+              <div class="col py-3">
+                <img src="assets/reviewstars.png" style="object-fit: contain;" class="card-img-top px-5 py-2">
+                <h4 class="fw-bold">Wingstop Singapore Pte. Ltd.</h4>
+                <h6 class="card-text">
+                  "As a startup navigating the complexities of financial reporting and compliance, Pinnacle Accountants LLP has been a lifesaver. 
+                  Thanks to their comprehensive services and real-time 
+                  access to our financial data through cloud-based software, we can focus on growing our business with confidence!"
+                </h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card testimonial-cover h-100 overflow-hidden text-bg-dark rounded-4"
-          style="background-image: url('assets/612x350.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 fw-bold">Company Name 3</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-card-inner rounded-2">
+            <div class="testimonial-cover" style="background-image: url(assets/testimonial-3.svg)">
+            </div>
+            <div class="testimonial-back px-4 py-2">
+              <div class="col py-3">
+                <img src="assets/reviewstars.png" style="object-fit: contain;" class="card-img-top px-5 py-2">
+                <h4 class="fw-bold">Nanyang Technological University</h4>
+                <h6 class="card-text">
+                  "Pinnacle Accountants LLP has been essential for our nonprofit’s financial management. Their knowledge of compliance and regulatory requirements 
+                  in Singapore has ensured we meet all obligations while maximizing our resources. Their tailored advisory services and commitment to our mission 
+                  have truly set them apart."
+                </h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -215,15 +247,15 @@
         <h3><i>Contact us to streamline your business compliance process.</i></h3>
       </div>
       <div class="col-4 d-inline-flex align-items-center">
-        <a class="btn contact-btn align-items-center" href="contact-us.html">Enquire Now</a>
+        <a class="contact-btn align-items-center justify-content-center d-flex" href="contact-us.html">Enquire Now</a>
       </div>
     </div>
   </div>
   <div class="container-fluid overflow-hidden text-center my-2 py-5" id="blog">
     <div class="row">
       <div class="col py-3">
-        <h2>Our Blog</h2>
-        <h5 style="color: #555;">Read our blog posts for the latest business news and financial advice</h5>
+        <h2>Our <span style="color: #930000;">Blog</span></h2>
+        <span class="cs-topper" style="color: #555;">Read our blog posts for the latest business news and financial advice</span>
       </div>
     </div>
     <div class="row g-5 mx-2 mb-2 px-4 justify-content-center">
@@ -231,11 +263,11 @@
         <div class="card rounded-4 h-100">
           <img src="assets/blog-1.jpg" class="card-img-top" alt="...">
           <div class="card-body py-4">
-            <a class="card-title stretched-link" href="#!">GST Increase in 2024: What it means for you and your business</a>
+            <a class="card-title stretched-link" href="#!">GST Increase in 2024: What it means for you and your...</a>
             <span class="position-absolute top-0 end-0 p-2 badge blogpost-date">
               16<br>Sep
             </span>
-            <p class="card-text py-1 px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+            <p class="card-text py-1 px-2">In 2022, the Minister for Finance announced that the GST rate will be raised in 2 steps, from 7% to 8% on 1 Jan 2023 and from 8% to 9% in...</p>
           </div>
         </div>
       </div>
@@ -247,7 +279,7 @@
             <span class="position-absolute top-0 end-0 p-2 badge blogpost-date">
               30<br>Jul
             </span>
-            <p class="card-text py-1 px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+            <p class="card-text py-1 px-2">Singapore has seen a significant shift in how businesses manage their financial data in recent years. More companies are increasingly...</p>
           </div>
         </div>
       </div>
@@ -259,13 +291,13 @@
             <span class="position-absolute top-0 end-0 p-2 badge blogpost-date">
               21<br>Jul
             </span>
-            <p class="card-text py-1 px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+            <p class="card-text py-1 px-2">Chartered accountants work in all fields of business and finance, including auditing, taxation, financial and general management. Some...</p>
           </div>
         </div>
       </div>
       </div>
       <div class="row pt-4 justify-content-center">
-        <a class="btn link-btn align-items-center" href="#!">View All</a>
+        <a class="link-btn align-items-center justify-content-center d-flex" href="#!">View All</a>
     </div>
     </div>
   </div>
