@@ -259,6 +259,14 @@ h2 {
 
 /* About Us Page */
 
+#about-cover{
+    background-color: #001c43;
+    background-image: url(../assets/background.jpg);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #about-us {
     padding: var(--sectionPadding);
     overflow: hidden;
