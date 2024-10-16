@@ -205,12 +205,13 @@ h2 {
   
   .testimonial-back {
     background-color: rgba(0, 28, 67, 0.9);
-    color: white;
+    color: #f5f5f5;
     transform: rotateY(180deg);
     font-family: "Raleway", Helvetica, sans-serif;
   }
   .testimonial-back .card-text{
     text-align: justify;
+    color: #fafbfc;
   }
 
 /* Blog Section */
