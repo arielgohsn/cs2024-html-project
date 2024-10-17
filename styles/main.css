@@ -51,6 +51,7 @@ h2 {
     font-weight: 500;
     margin: 0 0.5em;
     color: #001c43;
+    font-size: 110%;
 }
 
 .navbar-nav .nav-link.active{
