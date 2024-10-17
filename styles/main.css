@@ -31,6 +31,18 @@ h2 {
     transform: scale(1.2) perspective(1px);
 }
 
+.link-footer {
+    text-decoration: none;
+    transition: transform 100ms;
+    text-underline-offset: 0.2em;
+    color: rgba(255, 255, 255, 0.479);
+}
+
+.link-footer:hover {
+    color: #e59214;
+    transform: scale(1.05) perspective(1px);
+}
+
 .icon-footer {
     color: #e59214;
     text-decoration: none;
